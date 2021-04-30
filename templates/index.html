@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/responsive.css') }}">
+    <title>iPredict - Predicting the price of your dream home</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="{{ url_for('static',filename='img/skp2.jpg')}}" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Know the Price Not advice</p>
+                <p class="text-small">In this world of 7 billion people we need to provide shelter to all of them. This
+                    is the
+                    future of your home. See your pocket , see your desire and leave the rest on us.</p>
+                <div class="buttons">
+                    <button class="btn"><a href="predict">Predict Now</a></button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="{{ url_for('static',filename='img/hLogo2.jpg') }}" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">The end of your search is here</p>
+            <p class="sectionSubTag text-small">
+                Housing, or more generally living spaces, refers to the construction and assigned usage of houses or
+                buildings collectively, for the purpose of sheltering people — the planning or provision delivered by an
+                authority, with related meanings.Ensuring that members of society have a home in which to live,
+                whether this is a house, or some other kind of dwelling, lodging, or shelter, is a social issue.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?Buildings,villa,bunglow" alt="Society image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">Transforming Housing in India</p>
+            <p class="sectionSubTag text-small">
+                Affordable housing is housing which is deemed affordable to those with a median household income or
+                below as rated by the national government or a local government by a recognized housing affordability
+                index. Most of the literature on affordable housing refers to mortgages and number of forms that exist
+                along a continuum – from emergency shelters, to transitional housing, to non-market rental (also known
+                as social or subsidized housing), to formal and informal rental, indigenous housing, and ending with
+                affordable home ownership.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?Villa,city,house" alt="Building image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Lets Grow Together</p>
+            <p class="sectionSubTag text-small">
+                Housing is recognized as a social determinant of health. Lack of housing or poor-quality housing can
+                negatively affect an individual's physical and mental health. Housing attributes that negatively affect
+                physical health include dampness, mold, inadequate heating, and overcrowding. Mental health is also
+                affected by inadequate heating, overcrowding, dampness, and mold, as well as lack of personal space.[4]
+                Housing can affect the health of children through exposure to asthma triggers or lead, and through
+                injuries due to structural deficiencies.
+            </p>
+
+            <p class="sectionSubTag text-small">
+                A housing estate (or sometimes housing complex or housing development) is a group of homes and other
+                buildings built together as a single development. The exact form may vary from country to country.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?Home, nature, happy" alt="House image"
+                class="imgFluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2025 - www.iPredict.com - All rights reserved
+        </p>
+    </footer>
+    <script src="{{ url_for('static',filename='javascript/resp.js') }}"></script>
+
+</body>
+
+</html>
